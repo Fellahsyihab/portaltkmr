@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/*
+font-family: 'Bangers', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Comic Neue', cursive;
+*/
+
+:root {
+  --comicTextBG: #BFC0C0;
+}
+
+html {
+  font-size: 18px;
+  font-family: 'Comic Neue', cursive;
+}
+body { 
+ background: linear-gradient(#263260, #215480);
+ 
+ padding: 2.5em 5em;
+ font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* ----- Heading Section -----*/
+#heading {
+  margin: 3em 0;
+}
+#title, #intro {
+  margin: 0;
+  font-size: 5rem;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  color: white;
+  text-shadow: 10px 10px 1px black;
+}
+
+#intro {
+  font-size: 3rem;
+}
+
+/*--- White Border that contains all content -----*/
+#comic-border {
+  border: 1rem solid white;
+  padding: 0;
+}
+
+/*----- Introduction Area -----*/
+/* This contains the image of stan lee , image caption, summary paragraph*/
+.introduction {
+  padding: 0;
+  display: flex;
+}
+
+/*----- Featured Image with caption -----*/
+#img-div{ 
+  margin: 0;
+  height: 100%;
+  width: 45%;
+  display: inline-block;
+}
+
+#sum-area { 
+  margin: 0;
+  width: 50%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+#img-div #image, #sum-area img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#img-div #img-caption {
+  font-size: 18px;
+  margin: 0;
+  background: #E3B505;
+  width: 100%;
+  padding: 3% 0;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Intro Bio Summary */
+.introduction p{
+  display: inline-block;
+  margin: 0;
+  padding: 5% 5%;
+  background: white;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+#sum-area img {
+}
+
+#overlay-container {
+  position: absolute;
+ bottom: 0;
+}
+.gray-overlay {
+ background-color: rgba(0,0,0,.3);
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ bottom: 0;
+}
+
+#tribute-info {
+  margin-top: 0;
+  display: flex;
+}
+
+#superhero-area {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  
+}
+
+#superhero-area ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#hero-icons-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0 1%;
+}
+
+.hero-icon {
+  width: 50px;
+  height: 50px;
+}
+
+
+.site-header {
+  background-color: #ffffff;
+  padding-top: auto;
+  padding-bottom: auto;
+  
+}
+
+
+blockquote {
+  background-color: white;
+  margin: 0;
+  padding: 5% 5%;
+  border: 2px solid black;
+  font-size: 1.15em;
+}
+
+#closing-wiki {
+  font-size: 18px;
+  margin: 0;
+  background: #E3B505;
+  border: 2px solid black;
+  padding: 1% 0;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+  body { 
+    padding: .5em .5em;
+  }
+  .introduction {
+    flex-direction: column;
+  }
+  .introduction #img-div, #sum-area {
+    width: 100%;
+  }
+  #img-div #img-caption {
+  }
+  #overlay-container {
+    position: relative;
+  }
+  
+  #tribute-info {
+    flex-direction: column;
+  }
+  
+  #hero-icons-container {
+    flex-direction: row;
+    border: 3px solid black;
+    margin: 0;
+    padding: 1% 1%;
+  }
+}
+
+
